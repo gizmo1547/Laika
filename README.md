@@ -14,6 +14,6 @@
 | --- | ------- | --------------------------- |
 | 1 | How can agents communicate and coordinate when network is poor (urban congestion or rural coverage gaps)? | Without solution → collisions, inefficiency, unsafe behavior | 
 | 2 | How can agents adapt their strategy to completely different environments (city vs. rural) while staying safe and efficient? | One-size-fits-all policies fail dramatically in mixed networks |
-| 3 | How can we design interpretable reinforcement learn ingmodels that explain their decisions inhuman understandable ways? |
+| 3 | How can we design interpretable reinforcement learn ingmodels that explain their decisions inhuman understandable ways? | People should understand the agens |
 
 CSC 36000: Modern Distributed Computing
