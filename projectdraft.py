@@ -120,7 +120,15 @@ class Network:
     def __init__(self, network_type):
         self.network_type = network_type  # save what network is using urban, suburban, rural
         # Set network behavior based on type
-        if network_type == "urban":
+        if network_type == "v2x":
+            self.drop_prob = 0.01  # 5% messages lost
+            self.delay_range = (1, 1)  # messages arrive in 1-3 steps (small delay)
+            
+        elif network_type == "mqtt":
+            self.drop_prob = 0.10  # 5% messages lost
+            self.delay_range = (3, 8)  # messages arrive in 1-3 steps (small delay)
+            
+        elif network_type == "urban":
             self.drop_prob = 0.05  # 5% messages lost
             self.delay_range = (1, 3)  # messages arrive in 1-3 steps (small delay)
 
