@@ -15,6 +15,7 @@ We study how different network environments affect coordination, safety, interpr
 
 The system is built as a fully decentralized simulation, inspired by real-world drone swarms, V2X systems, and IoT communication protocols.
 
+
 📌 Project Motivation
 
 Autonomous drones operate in environments where:
@@ -30,6 +31,7 @@ Human operators need explainable behavior
 Key Question:
 
 How do communication constraints influence swarm coordination, and how can local autonomy compensate for network failures?
+
 
 🧠 System Overview
 
@@ -47,6 +49,7 @@ Logs its decisions for interpretability
 
 The environment simulates realistic network delays, packet loss, and message staleness.
 
+
 🤖 Agent Capabilities
 
 Each drone has:
@@ -59,15 +62,16 @@ Local sensing range (5 meters)
 
 Task state machine:
 
-IDLE
+  IDLE
 
-GO_TO_PICKUP
+  GO_TO_PICKUP
 
-GO_TO_DROPOFF
+  GO_TO_DROPOFF
 
 Human-readable decision logs
 
 Drones coordinate using only local information.
+
 
 🌐 Communication Models
 
@@ -82,6 +86,7 @@ Rural	High delay, high packet loss
 
 Each message may be delayed, dropped, or discarded as stale.
 
+
 📦 Task-Based Extension
 
 To move beyond pure motion simulation, we added logistics tasks:
@@ -95,6 +100,7 @@ Drones select the closest pickup
 After delivery, they request a new task
 
 This models real autonomous delivery scenarios.
+
 
 🧩 Decision Algorithm (High-Level)
 
@@ -118,6 +124,7 @@ Logs its reasoning
 
 All decisions are local and asynchronous.
 
+
 📊 Metrics Collected
 
 The simulation evaluates:
@@ -136,6 +143,7 @@ Tasks completed
 
 These metrics directly link network quality → behavior → performance.
 
+
 🔍 Interpretability Engine (Key Contribution)
 
 Every drone explains its behavior using human-readable logs, such as:
@@ -149,6 +157,7 @@ Every drone explains its behavior using human-readable logs, such as:
 “Large turn detected”
 
 This addresses the black-box problem in autonomous systems.
+
 
 🎥 Visualization
 
@@ -166,6 +175,7 @@ Orange = carrying task
 
 This provides visual validation of system behavior.
 
+
 🧠 Distributed Systems Perspective
 
 This project demonstrates key distributed systems concepts:
@@ -179,6 +189,7 @@ Fault tolerance via redundancy
 Local autonomy under failure
 
 Scalability to large swarms
+
 
 🏁 Conclusion
 
