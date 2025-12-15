@@ -6,7 +6,7 @@
 **Course/Project**: CSC 36000: Modern Distributed Computing – Final Project  
 **Date**: November 2025 
 **GitHub Repo**: https://github.com/gizmo1547/Laika
-**Google Colab**: [https://github.com/gizmo1547/Laika](https://colab.research.google.com/drive/1uNz9UnVD6ye_g6YHMB02sG19JYGzVOpL#scrollTo=8c81bc22)
+Google Colab Notebook: https://colab.research.google.com/drive/1uNz9UnVD6ye_g6YHMB02sG19JYGzVOpL
 
 
 Resilient Multi-Drone Coordination Under Network Constraints
