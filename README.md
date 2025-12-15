@@ -68,3 +68,120 @@ GO_TO_DROPOFF
 Human-readable decision logs
 
 Drones coordinate using only local information.
+
+🌐 Communication Models
+
+The simulation compares five realistic network environments:
+
+Network	Description
+V2X	Near-real-time, very low packet loss
+MQTT	Higher latency and moderate loss
+Urban	Low delay, moderate reliability
+Suburban	Medium delay and loss
+Rural	High delay, high packet loss
+
+Each message may be delayed, dropped, or discarded as stale.
+
+📦 Task-Based Extension
+
+To move beyond pure motion simulation, we added logistics tasks:
+
+2 pickup locations
+
+2 drop-off locations
+
+Drones select the closest pickup
+
+After delivery, they request a new task
+
+This models real autonomous delivery scenarios.
+
+🧩 Decision Algorithm (High-Level)
+
+At every time step, each drone:
+
+Processes received messages
+
+Smooths neighbor positions (noise reduction)
+
+Uses sensors if communication fails
+
+Applies swarm rules:
+
+Attraction (cohesion)
+
+Repulsion (collision avoidance)
+
+Steers toward task goal
+
+Logs its reasoning
+
+All decisions are local and asynchronous.
+
+📊 Metrics Collected
+
+The simulation evaluates:
+
+Message delivery rate
+
+Average communication delay
+
+Collision count
+
+Sensor fallback usage
+
+Interpretability event count
+
+Tasks completed
+
+These metrics directly link network quality → behavior → performance.
+
+🔍 Interpretability Engine (Key Contribution)
+
+Every drone explains its behavior using human-readable logs, such as:
+
+“No messages → slowed down”
+
+“Using sensors to avoid collision”
+
+“Steering toward pickup location”
+
+“Large turn detected”
+
+This addresses the black-box problem in autonomous systems.
+
+🎥 Visualization
+
+The project generates high-resolution MP4 videos showing:
+
+Drone movement in real time
+
+Pickup (red) and drop-off (green) locations
+
+Drone state:
+
+Blue = empty
+
+Orange = carrying task
+
+This provides visual validation of system behavior.
+
+🧠 Distributed Systems Perspective
+
+This project demonstrates key distributed systems concepts:
+
+Asynchronous communication
+
+No global clock
+
+Fault tolerance via redundancy
+
+Local autonomy under failure
+
+Scalability to large swarms
+
+🏁 Conclusion
+
+This project presents a robust, interpretable, and realistic distributed drone system that adapts to unreliable communication while maintaining safety and task performance.
+
+It bridges distributed systems theory, autonomous robotics, and real-world network constraints.
