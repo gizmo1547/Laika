@@ -49,6 +49,8 @@ Performs real tasks (pickup → delivery)
 Logs its decisions for interpretability
 
 The environment simulates realistic network delays, packet loss, and message staleness.
+<img width="848" height="716" alt="image" src="https://github.com/user-attachments/assets/7f823b7a-ec2e-48ea-b0ea-13858842a8a0" />
+
 
 
 🤖 Agent Capabilities
