@@ -21,17 +21,17 @@ The system is built as a fully decentralized simulation, inspired by real-world 
 
 Autonomous drones operate in environments where:
 
-Communication is unreliable or delayed
+  Communication is unreliable or delayed
 
-Network quality varies by location (urban vs rural)
+  Network quality varies by location (urban vs rural)
 
-Decisions must remain safe without global knowledge
+  Decisions must remain safe without global knowledge
 
-Human operators need explainable behavior
+  Human operators need explainable behavior
 
 Key Question:
 
-How do communication constraints influence swarm coordination, and how can local autonomy compensate for network failures?
+  How do communication constraints influence swarm coordination, and how can local autonomy compensate for network failures?
 
 
 🧠 System Overview
@@ -49,7 +49,7 @@ Performs real tasks (pickup → delivery)
 Logs its decisions for interpretability
 
 The environment simulates realistic network delays, packet loss, and message staleness.
-<img width="848" height="716" alt="image" src="https://github.com/user-attachments/assets/7f823b7a-ec2e-48ea-b0ea-13858842a8a0" />
+
 
 
 
@@ -175,8 +175,10 @@ Drone state:
 Blue = empty
 
 Orange = carrying task
+<img width="848" height="716" alt="image" src="https://github.com/user-attachments/assets/7f823b7a-ec2e-48ea-b0ea-13858842a8a0" />
 
 This provides visual validation of system behavior.
+
 
 
 🧠 Distributed Systems Perspective
