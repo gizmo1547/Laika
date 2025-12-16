@@ -17,7 +17,7 @@ We study how different network environments affect coordination, safety, interpr
 The system is built as a fully decentralized simulation, inspired by real-world drone swarms, V2X systems, and IoT communication protocols.
 
 
-📌 Project Motivation
+Project Motivation
 
 Autonomous drones operate in environments where:
 
@@ -34,7 +34,7 @@ Key Question:
   How do communication constraints influence swarm coordination, and how can local autonomy compensate for network failures?
 
 
-🧠 System Overview
+System Overview
 
 Each drone (agent):
 
@@ -53,7 +53,7 @@ The environment simulates realistic network delays, packet loss, and message sta
 
 
 
-🤖 Agent Capabilities
+Agent Capabilities
 
 Each drone has:
 
@@ -76,7 +76,7 @@ Human-readable decision logs
 Drones coordinate using only local information.
 
 
-🌐 Communication Models
+Communication Models
 
 The simulation compares five realistic network environments:
 
@@ -90,7 +90,7 @@ Rural	High delay, high packet loss
 Each message may be delayed, dropped, or discarded as stale.
 
 
-📦 Task-Based Extension
+Task-Based Extension
 
 To move beyond pure motion simulation, we added logistics tasks:
 
@@ -105,7 +105,7 @@ After delivery, they request a new task
 This models real autonomous delivery scenarios.
 
 
-🧩 Decision Algorithm (High-Level)
+Decision Algorithm (High-Level)
 
 At every time step, each drone:
 
@@ -128,7 +128,7 @@ Logs its reasoning
 All decisions are local and asynchronous.
 
 
-📊 Metrics Collected
+Metrics Collected
 
 The simulation evaluates:
 
@@ -147,7 +147,7 @@ Tasks completed
 These metrics directly link network quality → behavior → performance.
 
 
-🔍 Interpretability Engine (Key Contribution)
+Interpretability Engine (Key Contribution)
 
 Every drone explains its behavior using human-readable logs, such as:
 
@@ -162,7 +162,7 @@ Every drone explains its behavior using human-readable logs, such as:
 This addresses the black-box problem in autonomous systems.
 
 
-🎥 Visualization
+Visualization
 
 The project generates high-resolution MP4 videos showing:
 
@@ -181,7 +181,7 @@ This provides visual validation of system behavior.
 
 
 
-🧠 Distributed Systems Perspective
+Distributed Systems Perspective
 
 This project demonstrates key distributed systems concepts:
 
@@ -196,7 +196,7 @@ Local autonomy under failure
 Scalability to large swarms
 
 
-🏁 Conclusion
+Conclusion
 
 This project presents a robust, interpretable, and realistic distributed drone system that adapts to unreliable communication while maintaining safety and task performance.
 
