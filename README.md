@@ -76,7 +76,7 @@ This project presents an **interpretable, distributed drone coordination system*
 
 * Alexandr Voronovich
 
-Course Information
+**Course Information**
 
 CSC 36000: Modern Distributed Computing
 The City College of New York (CUNY)
