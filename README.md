@@ -5,7 +5,7 @@
 **Authors**: Rivaldo Lumelino, Alexandr Voronovich  
 **Course/Project**: CSC 36000: Modern Distributed Computing – Final Project  
 **Date**: November 2025 
-**GitHub Repo**: https://github.com/gizmo1547/Laika\\
+**GitHub Repo**: https://github.com/gizmo1547/Laika //
 **Google Colab Notebook**: https://colab.research.google.com/drive/1uNz9UnVD6ye_g6YHMB02sG19JYGzVOpL
 
 
