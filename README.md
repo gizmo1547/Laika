@@ -11,7 +11,7 @@
 
 
 
-This project presents an interpretable, distributed drone coordination system designed to operate under unreliable communication networks. The system avoids black-box learning and instead uses rule-based, explainable decision-making combined with communication-aware coordination and sensor-based fallback.
+This project presents an **interpretable, distributed drone coordination system** designed to operate under **unreliable communication networks.** The system avoids black-box learning and instead uses **rule-based, explainable decision-making** combined with **communication-aware coordination** and **sensor-based fallback.**
 
 **Key Features**
 
