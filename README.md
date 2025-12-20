@@ -5,6 +5,7 @@
 **Authors**: Rivaldo Lumelino, Alexandr Voronovich  
 **Course/Project**: CSC 36000: Modern Distributed Computing – Final Project  
 **Professor**: Bandyopadhyay  
+**Date**: December 2025  
 **Execution Environment**:
 This project is designed to run end-to-end in **Google Colab** (no local setup required)  
 **GitHub Repositoryo**: https://github.com/gizmo1547/Laika   
@@ -80,4 +81,3 @@ This project presents an **interpretable, distributed drone coordination system*
 
 CSC 36000: Modern Distributed Computing
 The City College of New York (CUNY)
-December 2025
