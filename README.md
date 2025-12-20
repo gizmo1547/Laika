@@ -13,65 +13,65 @@
 
 This project presents an interpretable, distributed drone coordination system designed to operate under unreliable communication networks. The system avoids black-box learning and instead uses rule-based, explainable decision-making combined with communication-aware coordination and sensor-based fallback.
 
-Key Features
+**Key Features**
 
-Distributed, decentralized drone coordination
+* Distributed, decentralized drone coordination
 
-Explicit modeling of network delay and packet loss
+* Explicit modeling of network delay and packet loss
 
-Interpretable decision logic with human-readable logs
+* Interpretable decision logic with human-readable logs
 
-Sensor-based fallback when communication fails
+* Sensor-based fallback when communication fails
 
-Task-based behavior (pickup and drop-off locations)
+* Task-based behavior (pickup and drop-off locations)
 
-Visualized drone movement (MP4 animations)
+* Visualized drone movement (MP4 animations)
 
-Network Environments Simulated
+**Network Environments Simulated**
 
-V2X
+* V2X
 
-MQTT
+* MQTT
 
-Urban
+* Urban
 
-Suburban
+* Suburban
 
-Rural
+* Rural
 
-Metrics Evaluated
+**Metrics Evaluated**
 
-Message delivery rate
+* Message delivery rate
 
-Communication delay
+* Communication delay
 
-Collision count
+* Collision count
 
-Sensor fallback usage
+* Sensor fallback usage
 
-Task completion
+* Task completion
 
-Technologies
+**Technologies**
 
-Python
+* Python
 
-Matplotlib (visualization & animation)
+* Matplotlib (visualization & animation)
 
-FFmpeg (video generation)
+* FFmpeg (video generation)
 
-How to Run
+**How to Run**
 
-Open the notebook in Google Colab or locally.
+* Open the notebook in Google Colab or locally.
 
-Install FFmpeg (if needed).
+* Install FFmpeg (if needed).
 
-Run the simulation cells to generate metrics and videos.
+* Run the simulation cells to generate metrics and videos.
 
-Authors
+**Authors**
 
-Rivaldo Lumelino
+* Rivaldo Lumelino
 
-Alexandr Voronovich
+* Alexandr Voronovich
 
 Course Information
 
