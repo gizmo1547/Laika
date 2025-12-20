@@ -11,193 +11,74 @@
 
 Resilient Multi-Drone Coordination Under Network Constraints
 
-This project simulates a distributed multi-drone system operating under realistic communication conditions.
-We study how different network environments affect coordination, safety, interpretability, and task completion when drones act without centralized control.
+Interpretable Multi-Agent Drone Coordination
 
-The system is built as a fully decentralized simulation, inspired by real-world drone swarms, V2X systems, and IoT communication protocols.
+CSC 36000 – Modern Distributed Computing (Final Project)
 
+This project presents an interpretable, distributed drone coordination system designed to operate under unreliable communication networks. The system avoids black-box learning and instead uses rule-based, explainable decision-making combined with communication-aware coordination and sensor-based fallback.
 
-Project Motivation
+Key Features
 
-Autonomous drones operate in environments where:
+Distributed, decentralized drone coordination
 
-  Communication is unreliable or delayed
+Explicit modeling of network delay and packet loss
 
-  Network quality varies by location (urban vs rural)
+Interpretable decision logic with human-readable logs
 
-  Decisions must remain safe without global knowledge
+Sensor-based fallback when communication fails
 
-  Human operators need explainable behavior
+Task-based behavior (pickup and drop-off locations)
 
-Key Question:
+Visualized drone movement (MP4 animations)
 
-  How do communication constraints influence swarm coordination, and how can local autonomy compensate for network failures?
+Network Environments Simulated
 
+V2X
 
-System Overview
+MQTT
 
-Each drone (agent):
+Urban
 
-Operates independently (no central controller)
+Suburban
 
-Communicates asynchronously with neighbors
+Rural
 
-Falls back to local sensors when messages fail
-
-Performs real tasks (pickup → delivery)
-
-Logs its decisions for interpretability
-
-The environment simulates realistic network delays, packet loss, and message staleness.
-
-
-
-
-Agent Capabilities
-
-Each drone has:
-
-Position and velocity in a 2D space
-
-Short-term memory for smoothing neighbor positions
-
-Local sensing range (5 meters)
-
-Task state machine:
-
-  IDLE
-
-  GO_TO_PICKUP
-
-  GO_TO_DROPOFF
-
-Human-readable decision logs
-
-Drones coordinate using only local information.
-
-
-Communication Models
-
-The simulation compares five realistic network environments:
-
-Network	Description
-V2X	Near-real-time, very low packet loss
-MQTT	Higher latency and moderate loss
-Urban	Low delay, moderate reliability
-Suburban	Medium delay and loss
-Rural	High delay, high packet loss
-
-Each message may be delayed, dropped, or discarded as stale.
-
-
-Task-Based Extension
-
-To move beyond pure motion simulation, we added logistics tasks:
-
-2 pickup locations
-
-2 drop-off locations
-
-Drones select the closest pickup
-
-After delivery, they request a new task
-
-This models real autonomous delivery scenarios.
-
-
-Decision Algorithm (High-Level)
-
-At every time step, each drone:
-
-Processes received messages
-
-Smooths neighbor positions (noise reduction)
-
-Uses sensors if communication fails
-
-Applies swarm rules:
-
-Attraction (cohesion)
-
-Repulsion (collision avoidance)
-
-Steers toward task goal
-
-Logs its reasoning
-
-All decisions are local and asynchronous.
-
-
-Metrics Collected
-
-The simulation evaluates:
+Metrics Evaluated
 
 Message delivery rate
 
-Average communication delay
+Communication delay
 
 Collision count
 
 Sensor fallback usage
 
-Interpretability event count
+Task completion
 
-Tasks completed
+Technologies
 
-These metrics directly link network quality → behavior → performance.
+Python
 
+Matplotlib (visualization & animation)
 
-Interpretability Engine (Key Contribution)
+FFmpeg (video generation)
 
-Every drone explains its behavior using human-readable logs, such as:
+How to Run
 
-“No messages → slowed down”
+Open the notebook in Google Colab or locally.
 
-“Using sensors to avoid collision”
+Install FFmpeg (if needed).
 
-“Steering toward pickup location”
+Run the simulation cells to generate metrics and videos.
 
-“Large turn detected”
+Authors
 
-This addresses the black-box problem in autonomous systems.
+Rivaldo Lumelino
 
+Alexandr Voronovich
 
-Visualization
+Course Information
 
-The project generates high-resolution MP4 videos showing:
-
-Drone movement in real time
-
-Pickup (red) and drop-off (green) locations
-
-Drone state:
-
-Blue = empty
-
-Orange = carrying task
-<img width="848" height="716" alt="image" src="https://github.com/user-attachments/assets/7f823b7a-ec2e-48ea-b0ea-13858842a8a0" />
-
-This provides visual validation of system behavior.
-
-
-
-Distributed Systems Perspective
-
-This project demonstrates key distributed systems concepts:
-
-Asynchronous communication
-
-No global clock
-
-Fault tolerance via redundancy
-
-Local autonomy under failure
-
-Scalability to large swarms
-
-
-Conclusion
-
-This project presents a robust, interpretable, and realistic distributed drone system that adapts to unreliable communication while maintaining safety and task performance.
-
-It bridges distributed systems theory, autonomous robotics, and real-world network constraints.
+CSC 36000: Modern Distributed Computing
+The City College of New York (CUNY)
+Professor Bandyopadhyay — December 2025
