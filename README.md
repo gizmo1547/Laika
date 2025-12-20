@@ -3,7 +3,7 @@
 # Interpretable Multi-Agent Coordination Algorithms for Heterogeneous (Urban/Suburban/Rural) Autonomous Mobility Networks
 
 **Authors**: Rivaldo Lumelino, Alexandr Voronovich  
-**Course/Project**: CSC 36000: Modern Distributed Computing – Final Project
+**Course/Project**: CSC 36000: Modern Distributed Computing – Final Project  
 **Professor**: Bandyopadhyay  
 **Date**: December 2025   
 **GitHub Repo**: https://github.com/gizmo1547/Laika   
